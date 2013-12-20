@@ -40,6 +40,10 @@ $(function(){
 			buildDirNav: true,
 			autoPlay: true
 		};
+
+		// Don't initialize if there aren't enough items to use.
+		if (slideLen <= 1) return;
+
 		// Combine Defaults and Options into Settings
 		var settings = $.extend({}, defaults, options);
 				
